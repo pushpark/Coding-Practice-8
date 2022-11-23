@@ -1,0 +1,23 @@
+GET http://localhost:3000/todos/?search_q=ing
+###
+GET http://localhost:3000/todos/10/
+###
+DELETE http://localhost:3000/todos/9/
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+###
+
+PUT http://localhost:3000/todos/10/
+Content-Type: application/json
+
+ {
+      "priority": "HIGH"
+    }
